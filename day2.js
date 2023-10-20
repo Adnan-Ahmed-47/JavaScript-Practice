@@ -29,10 +29,22 @@
 
 
 
-var sal = 50000
-var bon = 10000
 
-console.log("total annual income = " , sal*12 + bon)
+
+
+
+
+var str = 'He earns 50000 from salary per month, 10000 annual bonus.'
+
+// console.log(str.indexOf(5))
+var sal = str.substr(9,5)
+// console.log(str.indexOf(1))
+var bon = str.substr(38,5)
+
+var totalAnnualIncome = sal*12 + Number(bon)
+console.log('Total Annual Income = ' , totalAnnualIncome)
+
+
 
 
 
