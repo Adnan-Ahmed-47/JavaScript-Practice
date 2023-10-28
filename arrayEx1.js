@@ -47,17 +47,26 @@ var itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 
 // console.log(itCompanies)
 // console.log(itCompanies.join(), "and" , store, "are big IT companies.")
     // ---------------------------------------------------------
-var chComp = 'Microsoft'
-for(var i=1; i<=itCompanies.length; i++){
-    if(chComp == itCompanies[i]){
-        console.log(itCompanies[i])
-    }
-    else{
-        console.log("Company is not found")
-    }
-}                       
+// var chComp = 'Microsoft'
+// for(var i=1; i<=itCompanies.length; i++){
+//     if(chComp == itCompanies[i]){
+//         console.log(itCompanies[i])
+//     }
+//     else{
+//         console.log("Company is not found")
+//     }
+// }                   
+//              (OR) 
 
-
+// var chComp = 'Microsoft'
+// if(itCompanies.includes(chComp)){
+//     console.log(chComp)
+// }
+// else{
+//     console.log("Company not found")
+// }
+    // ---------------------------------------------------------
+    
 
 
 
