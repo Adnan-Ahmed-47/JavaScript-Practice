@@ -13,9 +13,12 @@ var ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 // }
     // --------------------------------------------------------------
 // ii) 
-// if(ages%2 == 0){
-//     console.log("even")
-// }
-// else{
-//     console.log("odd")
-// }
+
+if(ages%2 == 0){
+    console.log("median is : ", ages[Math.floor((ages.length/2)-1)])
+}
+else{
+    console.log("median is : ", ages[Math.floor(ages.length/2)])
+}
+
+
