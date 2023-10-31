@@ -57,7 +57,7 @@
 
 // ----------------------------------------------------------------------------------------------------
 
-var game = ['Apple', 'Banana', 'pet', 'it', 'chickoo']
+var game = ['Apple', 'Banana', 'pet', 'it', 'chickoo', 'kiwi']
 var arr = []
 
 for(var i=0; i<=game.length-1; i++){
