@@ -36,16 +36,13 @@
 // console.log("Sum of all ages is : ", avg)
 
             //  I tried to solve using below method
-var ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
-var sum = 0
-for(var i=0; i<=ages.length-1; i++){
-    sum += ages[i]
-    // console.log(sum)
-    
-    // var add = sum + ages[i]
-}
-var avg = sum/ages.length
-    console.log(avg)
+// var ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+// var sum = 0
+// for(var i=0; i<=ages.length-1; i++){
+//     sum += ages[i]
+// }
+// var avg = sum/ages.length
+//     console.log("Average of all ages is : " , avg)
 
 
     // --------------------------------------------------------------
@@ -60,20 +57,33 @@ var avg = sum/ages.length
 
 // ----------------------------------------------------------------------------------------------------
 
-// var game = ['Apple', 'Banana', 'pet', 'it', 'chickoo']
+var game = ['Apple', 'Banana', 'pet', 'it', 'chickoo']
+var arr = []
 
-// for(var i=0; i<=length-1; i++){
-//     if(game[i].length > 3){
-//         var arr = []
-//         console.log(arr.push(game[i]))
-//         // console.log(game[i])
-//         // console.log(arr)
-//     }
-//     else{
-//         console.log("not found")
-//     }
+for(var i=0; i<=game.length-1; i++){
+
+    if(game[i].length > 3){
+        arr.push(game[i])
+        // console.log(arr)
+    }
+    // else{
+    //     console.log("not found")
+    // }
+}
+console.log(arr)
+// ----------------------------------------------------------------------------------------------------
+
+// var cart = ['Shoes', 'Belt', 'Shirt', 'Trousers', 'Socks']
+
+// var rem = 'Belt'
+
+// for(i=0; i<=cart.length-1; i++){
+//     if(cart[i] == rem){
+//         cart.splice(1,1)
+//     }  
 // }
 
+// console.log(cart)
 
 
 
