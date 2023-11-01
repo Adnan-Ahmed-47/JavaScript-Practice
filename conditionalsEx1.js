@@ -18,30 +18,68 @@
 // else{
 //     alert(num + " is an odd number")}
 
-
-// CODE BY CHAT GPT
-// var userInput = prompt("Please enter a number:");
-// var number = parseInt(userInput);
-
-// if (!isNaN(number)) {
-//   if (number % 2 === 0) {
-//     alert(number + " is an even number.");
-//   } else {
-//     alert(number + " is not an even number.");
-//   }
-// } else {
-//   alert("Invalid input. Please enter a valid number.");
+// ----------------------------------------------------------------------------------------------------
+// var age = prompt("Enter your age : ")
+// var max = 18
+// if(age >= 18){
+//     alert('You are old enough to drive')
+// }
+// else if(age < 18 && age >= 0){
+//     var number = max - age
+//     alert('You are left with '+ number + ' years to drive')
 // }
 
 // ----------------------------------------------------------------------------------------------------
-var age = prompt("Enter your age : ")
-var max = 18
-if(age >= 18){
-    alert('You are old enough to drive')
-}
-else if(age < 18 && age >= 0){
-    var number = max - age
-    alert('You are left with ', number , 'years to drive')
-}
 
+// var a = 2
+// var b = 4
+// var c = 7
 
+// if(a>b && a>c){
+//     console.log('a is the largest ')
+// }
+// else if(b>c){
+//     console.log('b is the largest ')
+// }
+// else{
+//     console.log('c is the largest')
+// }
+
+// ----------------------------------------------------------------------------------------------------
+
+var day = prompt("Enter today's day : ")
+
+switch(day){
+    case 'Sunday':
+        alert("Weekend")
+        break;
+
+    case 'Monday':
+        alert("Working Day")
+        break;
+
+    case 'Tuesday':
+        alert("Working Day")
+        break;
+
+    case 'Wednesday':
+        alert("Working Day")
+        break;
+
+    case 'Thursday':
+        alert("Working Day")
+        break;
+
+    case 'Friday':
+        alert("Working Day")
+        break;
+
+    case 'Saturday':
+        alert("Weekend")
+        break;
+
+    default:
+        alert("Not found")
+        break;
+
+}
