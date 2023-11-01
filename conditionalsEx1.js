@@ -9,12 +9,14 @@
 
 // ----------------------------------------------------------------------------------------------------
 
+// If u r using the prompt function , ur output will be displayed in the browser rather than in powershell.
+
 // var num = prompt("Enter a number: ");
 // if(num%2 == 0){
-//     alert(num + "is an even number")
+//     console.log(num + " is an even number")
 // }
 // else{
-//     alert(num + "is an odd number")}
+//     alert(num + " is an odd number")}
 
 
 // CODE BY CHAT GPT
@@ -32,3 +34,14 @@
 // }
 
 // ----------------------------------------------------------------------------------------------------
+var age = prompt("Enter your age : ")
+var max = 18
+if(age >= 18){
+    alert('You are old enough to drive')
+}
+else if(age < 18 && age >= 0){
+    var number = max - age
+    alert('You are left with ', number , 'years to drive')
+}
+
+
