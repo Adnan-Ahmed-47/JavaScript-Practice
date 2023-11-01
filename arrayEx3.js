@@ -57,20 +57,16 @@
 
 // ----------------------------------------------------------------------------------------------------
 
-var game = ['Apple', 'Banana', 'pet', 'it', 'chickoo', 'kiwi']
-var arr = []
+// var game = ['Apple', 'Banana', 'pet', 'it', 'chickoo', 'kiwi']
+// var arr = []
 
-for(var i=0; i<=game.length-1; i++){
+// for(var i=0; i<=game.length-1; i++){
 
-    if(game[i].length > 3){
-        arr.push(game[i])
-        // console.log(arr)
-    }
-    // else{
-    //     console.log("not found")
-    // }
-}
-console.log(arr)
+//     if(game[i].length > 3){
+//         arr.push(game[i])
+//     }
+// }
+// console.log(arr)
 // ----------------------------------------------------------------------------------------------------
 
 // var cart = ['Shoes', 'Belt', 'Shirt', 'Trousers', 'Socks']
