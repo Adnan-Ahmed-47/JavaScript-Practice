@@ -83,11 +83,24 @@
 
 // function add(a,b){
 //     var sum = a+b
+
 //     return sum
 // }
 
 // console.log(add(1,2))
 // console.log(add(4,5))
+
+
+
+// function add(a,b){
+//     var sum = a+b
+//     // return a+b
+// }
+
+// console.log(add(1,2))
+// console.log(add(4,5))
+
+
 
 
 // getEvenNumbers([1,2,3,4,5,6,7,8,9,10])
