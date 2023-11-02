@@ -47,39 +47,77 @@
 
 // ----------------------------------------------------------------------------------------------------
 
-var day = prompt("Enter today's day : ")
+// var day = prompt("Enter today's day : ")
 
-switch(day){
-    case 'Sunday':
-        alert("Weekend")
-        break;
+// switch(day){
+//     case 'Sunday':
+//         alert("Weekend")
+//         break;
 
-    case 'Monday':
-        alert("Working Day")
-        break;
+//     case 'Monday':
+//         alert("Working Day")
+//         break;
 
-    case 'Tuesday':
-        alert("Working Day")
-        break;
+//     case 'Tuesday':
+//         alert("Working Day")
+//         break;
 
-    case 'Wednesday':
-        alert("Working Day")
-        break;
+//     case 'Wednesday':
+//         alert("Working Day")
+//         break;
 
-    case 'Thursday':
-        alert("Working Day")
-        break;
+//     case 'Thursday':
+//         alert("Working Day")
+//         break;
 
-    case 'Friday':
-        alert("Working Day")
-        break;
+//     case 'Friday':
+//         alert("Working Day")
+//         break;
 
-    case 'Saturday':
-        alert("Weekend")
-        break;
+//     case 'Saturday':
+//         alert("Weekend")
+//         break;
 
-    default:
-        alert("Not found")
-        break;
+//     default:
+//         alert("Not found")
+//         break;
+// }
 
+// ----------------------------------------------------------------------------------------------------
+
+var userRole = 'admin'
+var action = {
+    admin
 }
+var admin = {
+    permission: 'create',
+    permission: 'read',
+    permission: 'update',
+    permission: 'delete'
+}
+var user = {
+    permission: 'create',
+    permission: 'read'
+}
+
+var guest = {
+    permission: 'read'
+}
+function checkPermission(userRole, action){
+    if(userRole == admin){
+        console.log("Permission granted.")
+    }
+    else if(userRole == user){
+        console.log("you have the permission to create & read")
+    }
+    else{
+        console.log("you only have a permission to read")
+    }
+}
+
+console.log(checkPermission('admin', 'read'))
+
+
+
+
+
