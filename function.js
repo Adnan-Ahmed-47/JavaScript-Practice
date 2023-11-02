@@ -25,9 +25,16 @@
 //     i++
 // } while (i<=0);
 
+
 // let arr = [1,2,3,4]
 
 // for (var elems of arr) {
+//     console.log(elems)
+// }
+
+// Done by me
+// var company = ['facebook', 'amazon', 'google', 'apple']
+// for(var elems of company){
 //     console.log(elems)
 // }
 
@@ -69,6 +76,8 @@
 
 // console.log(arrEven)
 
+
+
 // functions
 
 
@@ -83,7 +92,6 @@
 
 // getEvenNumbers([1,2,3,4,5,6,7,8,9,10])
 
-
 // function getEvenNumbers(array){
 //     var arrEven = []
 //     for(let i=0;i<=array.length-1;i++){
@@ -96,14 +104,18 @@
 
 // getEvenNumbers([1,2,3,4,5,6,7,8,9,10])
 
+
 // console.log(fn())
 
 // var fn = function(){
 // return 23
 // }
 
+
 // console.log(a)
 // var a = 10
+
+
 
 // nested loops
 
