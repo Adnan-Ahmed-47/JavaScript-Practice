@@ -84,15 +84,25 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------
 
-var arr = ['ALBANIA', 'BOLIVIA', 'CANADA', 'DENMARK', 'ETHIOPIA', 'FINLAND', 'GERMANY', 'HUNGARY', 'IRELAND', 'JAPAN', 'KENYA']
+// var arr = ['ALBANIA', 'BOLIVIA', 'CANADA', 'DENMARK', 'ETHIOPIA', 'FINLAND', 'GERMANY', 'HUNGARY', 'IRELAND', 'JAPAN', 'KENYA']
 
-var country
-for(var i=0; i<=arr.length-1; i++){
-    var len = arr[i].length
+// var arr1 = []
+// for(var i=0; i<=arr.length-1; i++){
+//     var len = arr[i].length
 
-    if(len == 5){
-        country = arr[i]
-    }
-}
+//     if(len == 5){
+//         arr1.push(arr[i])
+//     }
+// }
+// console.log(arr1)
 
-console.log(country)
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+
+// var arr = ['ALBANIA', 'BOLIVIA', 'CANADA', 'DENMARK', 'ETHIOPIA', 'FINLAND', 'GERMANY', 'HUNGARY', 'IRELAND', 'JAPAN', 'KENYA']
+// var arr1 =[]
+// for(var i=arr.length-1; i>=0; i--){
+//     console.log(arr[i])
+//     arr1.push(arr[i])
+// }
+// console.log(arr1)
+
