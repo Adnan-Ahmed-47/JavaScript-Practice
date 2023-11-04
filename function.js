@@ -122,9 +122,9 @@
 // console.log(fn())
 
 // var fn = function(){
-// return 23
+//     return 23
 // }
-
+// console.log(fn())
 
 // console.log(a)
 // var a = 10
