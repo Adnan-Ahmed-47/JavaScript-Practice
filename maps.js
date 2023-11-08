@@ -85,17 +85,21 @@ var students = [
   { name: "Sameer", age: 26 },
 ];
 
-var studNames = students.map((students) => {
+var studNames = students.map((item) => {
 
-  var year = 2023;
+  var years = 2023;
   //   console.log(students.name)
   // console.log(students)
   // return year - students.age;
-  var z =  year - students.age;
-  console.log(z)
-  let newData = [...students, year= z]
-  // var arr = [ students.name, z]
-  return newData
+  // var z =  year - students.age;
+  // console.log(z)
+  // let newData = [...students, year= z]
+  // // var arr = [ students.name, z]
+  // return newData
+    let {name} = item;
+    let year = years - item.age;
+    let obj = {name,year}
+  return obj;
 });
 
 console.log(studNames)
@@ -130,6 +134,21 @@ let obj1 = [{
 
 // console.log(obj1)
 
-let newObj = [...obj1]
+// let newObj = [...obj1]
 
 // console.log(newObj)
+
+// let  {year} = obj1
+
+// // console.log(obj1)
+// obj1.forEach((item)=>{
+//   let {name} = item
+//   console.log(name)
+// })
+
+//ES6 : map,filter,reduce,let,const,arrow functions,callbacks,fetch&promises,destrucing
+
+//DOm : DOcument object Model
+
+JS : EMCASCRIPT
+// ES2015 ==> 
