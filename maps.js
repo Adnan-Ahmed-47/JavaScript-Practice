@@ -86,10 +86,16 @@ var students = [
 ];
 
 var studNames = students.map((students) => {
+
   var year = 2023;
-//   console.log(students.name)
-  console.log(students)
-  return year - students.age;
+  //   console.log(students.name)
+  // console.log(students)
+  // return year - students.age;
+  var z =  year - students.age;
+  console.log(z)
+  let newData = [...students, year= z]
+  // var arr = [ students.name, z]
+  return newData
 });
 
 console.log(studNames)
@@ -97,5 +103,33 @@ console.log(studNames)
 
 
 
-let arr = [1,2,3,4,5];
-let newArr = arr;
+// let arr = [1,2,3,4,5];
+// let newArr = arr;
+// // console.log(newArr)
+// newArr[0] = 10;
+// console.log(newArr,arr)
+
+//destructuring
+
+let arr = [1,2,3,4,5,6];
+let newArr = [...arr]  //deep copy
+// console.log(newArr)
+
+newArr[0] = 20;
+// console.log(newArr,arr)
+
+
+let obj1 = [{
+  name : 'abx',
+  year : 2022
+},
+{
+  name : 'xyz',
+  year : 2023
+}]
+
+// console.log(obj1)
+
+let newObj = [...obj1]
+
+// console.log(newObj)
