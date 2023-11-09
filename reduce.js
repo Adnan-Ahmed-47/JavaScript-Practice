@@ -12,8 +12,72 @@
 
 // ------------------------------------------------------------------------------------------------
 
-var arr = ['Harry', 'is', 'the', 'best', 'coder']
+//  var arr = ['Harry', 'is', 'the', 'best', 'coder']
 
-var newArr = arr.reduce((p,c) => {
+// var newArr = []
+// var p = arr.join(' ')
+// newArr.push(p)
+// console.log(newArr)
+
+// console.log(arr.join(' '))
+
+
+// var newArr = arr.reduce((p,c) => {
     
+// // },0)
+
+// ACTUAL ANSWER
+// let str="";
+// let isTrue=true;
+
+// let reduce1=arr.reduce((acc,el)=>{
+//     // arr1.push(acc)
+//     if(isTrue==true){
+//         // str=str+el+" ";
+//         acc.push(str);
+//         isTrue=false;
+//     }
+//     acc[0]=acc[0]+el+" ";
+//     return acc;
+
+// },[])
+// console.log(reduce1)
+
+// ------------------------------------------------------------------------------------------------
+
+// var obj = [
+//     {product:'Shoes', price: 8000},
+//     {product:'Watch', price: 12000},
+//     {product:'Shirt', price: 9000},
+//     {product:'Bag', price: 1100},
+//     {product:'Coke', price: 500}
+
+// ]
+
+// var newArr = obj.reduce((acc,el) => {
+//     acc = acc + el.price
+//     return acc
+// },0)
+
+// console.log("The total Price is : " ,newArr)
+
+// ------------------------------------------------------------------------------------------------
+
+var arr = [
+    {type: 'debit', amount:50},
+    {type: 'credit', amount:100},
+    {type: 'debit', amount:30}
+]
+
+var amount = arr.reduce((acc,elem) => {
+    if(elem.type == 'debit'){
+        acc = acc - elem.amount
+    }
+    else if(elem.type == 'credit'){
+        acc = acc + elem.amount
+    }
+
+    return acc
 },0)
+
+console.log(amount)
