@@ -106,7 +106,9 @@ console.log(studNames)
 
 
 
+// ##################################### END ##################################################
 
+// FOR UNDERSTANDING
 // let arr = [1,2,3,4,5];
 // let newArr = arr;
 // // console.log(newArr)
@@ -115,22 +117,22 @@ console.log(studNames)
 
 //destructuring
 
-let arr = [1,2,3,4,5,6];
-let newArr = [...arr]  //deep copy
+// let arr = [1,2,3,4,5,6];
+// let newArr = [...arr]  //deep copy
 // console.log(newArr)
 
-newArr[0] = 20;
+// newArr[0] = 20;
 // console.log(newArr,arr)
 
 
-let obj1 = [{
-  name : 'abx',
-  year : 2022
-},
-{
-  name : 'xyz',
-  year : 2023
-}]
+// let obj1 = [{
+//   name : 'abx',
+//   year : 2022
+// },
+// {
+//   name : 'xyz',
+//   year : 2023
+// }]
 
 // console.log(obj1)
 
@@ -150,5 +152,5 @@ let obj1 = [{
 
 //DOm : DOcument object Model
 
-JS : EMCASCRIPT
+// JS : ECMASCRIPT
 // ES2015 ==> 
