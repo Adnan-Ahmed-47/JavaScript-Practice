@@ -12,36 +12,34 @@
 
 // ------------------------------------------------------------------------------------------------
 
-//  var arr = ['Harry', 'is', 'the', 'best', 'coder']
+// ACTUAL ANSWER
 
+//  var arr = ['Harry', 'is', 'the', 'best', 'coder']
+// let str="";
+// let isTrue=true;
+
+// let reduce1 = arr.reduce((acc,el)=>{
+//     if(isTrue==true){
+//         // str=str+el+" ";
+//         acc.push(str);
+//         isTrue=false;
+//     }
+//     acc[0]=acc[0] + el + " ";
+//     return acc;
+// },[])
+
+// console.log(reduce1)
+
+
+// TRIED BY ME
+
+//  var arr = ['Harry', 'is', 'the', 'best', 'coder']
 // var newArr = []
 // var p = arr.join(' ')
 // newArr.push(p)
 // console.log(newArr)
 
 // console.log(arr.join(' '))
-
-
-// var newArr = arr.reduce((p,c) => {
-    
-// // },0)
-
-// ACTUAL ANSWER
-// let str="";
-// let isTrue=true;
-
-// let reduce1=arr.reduce((acc,el)=>{
-//     // arr1.push(acc)
-//     if(isTrue==true){
-//         // str=str+el+" ";
-//         acc.push(str);
-//         isTrue=false;
-//     }
-//     acc[0]=acc[0]+el+" ";
-//     return acc;
-
-// },[])
-// console.log(reduce1)
 
 // ------------------------------------------------------------------------------------------------
 
@@ -80,4 +78,4 @@ var amount = arr.reduce((acc,elem) => {
     return acc
 },0)
 
-console.log(amount)
+console.log("The account balance is : Rs" ,amount)
