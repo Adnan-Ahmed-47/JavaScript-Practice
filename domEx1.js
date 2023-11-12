@@ -66,7 +66,8 @@
 // div[1].innerHTML = `<i>${text}</i>`
 // div[0].innerHTML = `<i>${text}</i>`
 
-// ______________________________________________________________________________________________________
+
+// ________________________DOM EXERCISE__________________________________________________________________
 
 // var para1 = document.querySelector('p')
 // console.log(para1.textContent)
@@ -160,28 +161,33 @@
 // console.log(para4)
 
 // -----------------------------------------------------------------------------------
+// done this problem by 2 methods
 
 var head = document.querySelector('h1')
 
-var isTrue = true;
+// var isTrue = true;
+
+var arr = ['red', 'green', 'blue', 'black']
+var i = 0;
+
 var set = setInterval(() => {
-        if(isTrue == true){
-            head.style.color = "red";
-            isTrue = false
-        }
-        else{
-            head.style.color = "green"
+        // if(isTrue == true){
+        //     head.style.color = "red";
+        //     isTrue = false
+        // }
+        // else{
+        //     head.style.color = "green"
+        //     isTrue =true
+        // }
+        // console.log("2 sec")
+    //-----------------------------------------------
+        head.style.backgroundColor = arr[i]
+        i++
+        if(i==arr.length){
+            i=0;
         }
 
-    // return i
-    // head.style.color = "red";
-    // head.style.color = "green";
-    // head.style.color = "blue";
-    // console.log("inside the function")
 }, 2000);
-
-// clearInterval()
-
 
 // console.log(setInterval())
 console.log(set)
