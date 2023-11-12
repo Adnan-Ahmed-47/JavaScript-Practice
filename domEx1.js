@@ -189,6 +189,5 @@ var set = setInterval(() => {
 
 }, 2000);
 
-// console.log(setInterval())
 console.log(set)
 
