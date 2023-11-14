@@ -21,58 +21,67 @@
 
 // Event Listeners
 
-let btn = document.querySelector('#btn');
+// let btn = document.querySelector('#btn');   
 
 // btn.addEventListener('click', function (e) {
 
-//     // e.target.value = "BUTTON CLICKED"
-//     console.log("button clicked")
+//     e.target.innerText = "BUTTON CLICKED"
+//     // console.log(e.target)
+//     // console.log(e.target.innerText)
+//     // console.log(e.target.value)
 // })
 
 // btn.addEventListener('dblclick', function (e) {
 
 //     // e.target.value = "BUTTON CLICKED"
-//     console.log("button clicked")
+//     e.target.innerText = "BUTTON CLICKED"
+//     // console.log(e.target.value)
+//     console.log(e.target.innerText)
+
+//     // console.log("button clicked")
 // })
 
 // let movAct
 
 // let box = document.querySelector('.box');
-// box.addEventListener('mouseenter', (e) => {
-//     // console.log("mouse enter")\
-//     box.style.backgroundColor = "red"
+// btn.addEventListener('mouseenter', (e) => {
+//     // btn.style.backgroundColor = "red"
+//     console.log("mouse entered")
 //     // box.setAttribute('id','bx')
+
+//     // console.log(btn.style.backgroundColor)
 // })
 
 
-// box.addEventListener('mouseleave', (e) => {
-//     // console.log(e)
+// btn.addEventListener('mouseleave', (e) => {
+//     btn.style.backgroundColor = "black"
 //     console.log("mouse leave")
-//     box.style.backgroundColor = "black"
+//     // console.log(e)
 // })
 
-// box.addEventListener('mousemove', (e) => {
+// btn.addEventListener('mousemove', (e) => {
 //     // console.log(e.clientX)
 //     // movAct = e.timeStamp
-//     // console.log("mouse move")
+//     console.log("mouse move")
 //     // box.style.backgroundColor = "black"
 // })
 
 
 
-// box.addEventListener('mouseover', (e) => {
+// btn.addEventListener('mouseover', (e) => {
 //     // console.log(e.clientX)
-//     // movAct = e.timeStamp
+//     movAct = e.timeStamp
 //     // console.log("mouse over")
 //     // box.style.backgroundColor = "black"
 // })
-// // console.log(movAct)
+// console.log(movAct)
 
-// box.addEventListener('mouseout', (e) => {
+
+// btn.addEventListener('mouseout', (e) => {
 //     // console.log(e.clientX)
 //     // movAct = e.timeStamp
-//     console.log("mouse out")
-//     // box.style.backgroundColor = "black"
+    // console.log("mouse out")
+//     // btn.style.backgroundColor = "black"
 // })
 
 
@@ -101,9 +110,11 @@ let btn = document.querySelector('#btn');
 
 
 // username.addEventListener('keydown', function (e) {
-//     console.log(e)
+//     // console.log(e)
 //     console.log(e.target.value)
 // })
+
+
 // let inpVal
 // username.addEventListener('keyup', function (e) {
 //     inpVal = e.target.value
@@ -114,6 +125,5 @@ let btn = document.querySelector('#btn');
 //     username.style.border = "1px solid blue"
 
 // }
-
 // })
  
