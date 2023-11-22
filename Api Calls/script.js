@@ -48,30 +48,40 @@
 
 // ---------------------------------------------------------------------------------------------------
 
-// let input = document.querySelector('input[placeholder=id]')
-// let btn = document.querySelector('#btn')
+let input = document.querySelector('input[placeholder=id]')
+let btn = document.querySelector('#btn')
+let display = document.querySelector('#display')
+let table = document.querySelector('tbody')
 
-// function apiCall(url){
-//     let data = new XMLHttpRequest();
-//     // data.responseType = "json";
-//     // console.log(data)
+function apiCall(url){
+    let data = new XMLHttpRequest();
+    data.responseType = "json";
+    // console.log(data)
 
-//     data.onload = function(){
-//         let newData = JSON.parse(data.response)
-//         // console.log(newData.products[0].title)
+    data.onload = function(){
+        // let newData = JSON.parse(data.response)
+        // console.log(newData.products[0].title)
+        // let newData = `<p>${data.response.title}</p>`;
+        let newData = data.response;
+        console.log(newData)
 
-//         console.log(newData)
-//     }
+        table.innerHTML = `<tr>
+        <td>${data.response.id}</td>
+        <td>${data.response.title}</td>
+        </tr>`;
+    }
+    
+    data.open('GET',url);
+    data.send();
+}
 
-//     data.open('GET',url);
-//     data.send();
-// }
+btn.addEventListener('click', function(){
+    apiCall(`https://dummyjson.com/products/${input.value}`);
 
-// btn.addEventListener('click', function(e){
-//     apiCall(`https://dummyjson.com/products/${input.value}`);
-// })
+    
+})
 
-// // apiCall('https://dummyjson.com/products')
+// apiCall('https://dummyjson.com/products')
 
 
 // ---------------------------------------------------------------------------------------------------
