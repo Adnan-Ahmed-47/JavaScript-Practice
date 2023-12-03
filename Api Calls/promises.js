@@ -90,7 +90,8 @@
     
 //     let promise = new Promise((resolve,reject)=>{
 //             data.onload = function(){
-//                 if(true){
+//                 let fetData = data.response
+//                 if(fetData != null){
 //                     resolve(data.response)
 //                 }
 //                 else{
@@ -99,6 +100,7 @@
 //             }
             
 //         })
+
 //         data.open('GET', url)
 //         data.send()
 //         return promise
@@ -107,64 +109,110 @@
 // btn.addEventListener('click', function(e){
 //     ApiPromise('https://dummyjson.com/carts/1')
 
-//     .then((data)=>{console.log(data)}) 
+//     .then((data)=>{console.log(data.products)}) 
 //     .catch((data2)=>{console.log("error")}) 
 
 // })
 
-// DOUBT: HOW TO CALL MULTIPLE API'S BY USING PROMISES
 
 // --------------------------------------------------------------------------------------------
 
+// DOUBT: HOW TO CALL MULTIPLE API'S BY USING PROMISES
+
 // let btn = document.querySelector('#btn');
 
-
-// function Promiseall(){
-//     ApiPromise()
-// }
-// function ApiPromise(url1,url2){
+// function ApiPromise(url){
 //     let data = new XMLHttpRequest();
 //     data.responseType='json';
     
     
-//     let promise1 = new Promise((resolve,reject)=>{
+//     let promise = new Promise((resolve,reject)=>{
 //             data.onload = function(){
-//                 if(true){
+//                 let fetData = data.response
+//                 if(fetData != null){
+//                     console.log(data.response)
 //                     resolve(data.response)
 //                 }
 //                 else{
 //                     reject("Doesn't load the required information")
+//                     console.log("kaam karra")
 //                 }
-//             }       
-//         })
-//         // data.open('GET', url)
-//         // data.send()
-//         // return promise1
-
-//     let promise2 = new Promise((resolve,reject)=>{
-//             data.onload = function(){
-//                 if(true){
-//                     resolve(data.response)
-//                 }
-//                 else{
-//                     reject("Doesn't load the required information")
-//                 }
-//             }       
+//             }
+               
 //         })
 //         data.open('GET', url)
 //         data.send()
-//         return promise1,promise2
+//         return promise
+
 // }
 
 
 // btn.addEventListener('click', function(e){
-//     // ApiPromise('https://dummyjson.com/carts/1')
-//     Promiseall([promise1,promise2])
+//     let prom2 = ApiPromise('https://dummyjon.com/carts/2')
+//     let prom1 = ApiPromise('https://dummyjon.com/carts/1')
+    
+//     Promise.all([prom1,prom2])
 
 //     .then((data)=>{console.log(data)}) 
-//     .catch((data2)=>{console.log("error")}) 
+//     .catch((error)=>{console.log(error)}) 
 
 // })
+
+// --------------------------------------------------------------------------------------------
+
+
+let btn = document.querySelector('#btn');
+
+function ApiPromise(url){
+    let data = new XMLHttpRequest();
+    data.responseType='json';
+     
+    let promise = new Promise((resolve,reject)=>{
+            data.onload = function(){
+                let fetData = data.response
+                if(fetData != null){
+                    // console.log(data.response)
+                    resolve(data.response)
+                }
+                else{
+                    reject("Doesn't load the required information")
+                    // console.log("kaam karra")
+                }
+            }
+               
+        })
+        data.open('GET', url)
+        data.send()
+        return promise
+}
+
+
+btn.addEventListener('click', function(e){
+    let tot = 0
+    ApiPromise('https://dummyjson.com/carts/1')
+
+    .then(
+        
+        (prom1) => {console.log(prom1)
+        return prom1.total
+        // return ApiPromise('https://dummyjson.com/carts/2')
+    })
+    .then((prom2)=> {
+        // console.log(prom2)
+        tot += prom2
+        return ApiPromise('https://dummyjson.com/carts/2') 
+    })
+    .then((prom3)=>{console.log(prom3)
+    return prom3.total})
+
+    .then((total)=> {
+        tot += total
+        console.log("Total Amount: ", tot)
+    })
+    .catch((err) => {console.log(err)})
+
+
+})
 
 
 
