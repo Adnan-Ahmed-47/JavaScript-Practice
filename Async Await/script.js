@@ -54,6 +54,7 @@
 // setTimeout(()=>{
 //     PRint()
 // },2000)
+
 //First Console.log or JS code runs 
 //then promsies gives its output which are asynchronous(fetch,promise) 
 //Lastly setTime out SetTimeInterval runs 
@@ -187,53 +188,70 @@
 // ----------------------------------------------------------------------------------------------
 
 
-let display = document.querySelector('tbody')
+// let display = document.querySelector('tbody')
 
-fetch('https://restcountries.com/v2/all')
+// fetch('https://restcountries.com/v2/all')
 
-.then((data) => {
-    // console.log(data)
-    return data.json();
-})
-.then((actData) => {
-    // console.log(actData)
-    let myData = actData.map((item)=>{
-        let obj = {}
-        obj.name = item.name;
-        // obj.languages = item.languages;
+// .then((data) => {
+//     // console.log(data)
+//     return data.json();
+// })
+// .then((actData) => {
+//     // console.log(actData)
+//     let myData = actData.map((item)=>{
+//         let obj = {}
+//         obj.name = item.name;
+//         // obj.languages = item.languages;
 
-        let obj1 = item.languages.map((elem) =>{
-            return elem.name;
-        })
-        obj.languages = obj1.join(",");
-        obj.noOfLang = obj1.length;
+//         let obj1 = item.languages.map((elem) =>{
+//             return elem.name;
+//         })
+//         obj.languages = obj1.join(",");
+//         obj.noOfLang = obj1.length;
 
-        return obj
-    })
-    // console.log(myData)
-    return myData; 
-})
+//         return obj
+//     })
+//     // console.log(myData)
+//     return myData; 
+// })
 
-// .then((dat) => {console.log(dat)})
+// // .then((dat) => {console.log(dat)})
 
-.then((dispData)=> {
-    let table = dispData.map((item)=>{
-    let row = ` <tr>
-        <td>${item.name}</td>
-        <td>${item.languages}</td>
-        <td>${item.noOfLang}</td>
-    </tr>  `
+// .then((dispData)=> {
+//     let table = dispData.map((item)=>{
+//     let row = ` <tr>
+//         <td>${item.name}</td>
+//         <td>${item.languages}</td>
+//         <td>${item.noOfLang}</td>
+//     </tr>  `
 
-    return row
-    })
+//     return row
+//     })
 
-    return table
-})
+//     return table
+// })
 
-.then((dat)=> {
-    btn.addEventListener('click', function(e){
-            display.innerHTML = dat.join('');
-            console.log(dat)
-        })  
+// .then((dat)=> {
+//     btn.addEventListener('click', function(e){
+//             display.innerHTML = dat.join('');
+//             console.log(dat)
+//         })  
     
-})
+// })
+
+
+// _________________________________________________________________________________________
+
+                // ASYNC AWAIT 
+
+async function AsyncProm(){
+    let data1= await fetch('https://dummyjson.com/users');
+    console.log(data1)
+    let actData = await data1.json();
+    console.log(actData.users);
+
+}
+
+AsyncProm()
+
+
